@@ -1,0 +1,29 @@
+require_relative 'C:\Users\Kalisto\Documents\Ruby\OO\aluno.rb'
+
+require_relative 'C:\Users\Kalisto\Documents\Ruby\OO\turma.rb'
+
+require_relative 'C:\Users\Kalisto\Documents\Ruby\OO\funcionario.rb'
+
+require_relative 'C:\Users\Kalisto\Documents\Ruby\OO\professor.rb'
+
+pia = Professor.new("ederson", 1203, "redes II")
+
+pedro = Aluno.new("pedro higor", "12 99654-5316", 3023907)
+
+priscila = Aluno.new("priscila pereira", "12 99648-8821", 3092208)
+
+wrley = Aluno.new("wrley martins", "12 4002-8922", 3044899)
+
+irys = Aluno.new("irys rosa", "12 98122-6630", 3023340)
+
+redes = Turma.new(02, "redes II", pia)
+
+redes.adiciona_aluno(irys)
+
+redes.adiciona_aluno(wrley)
+
+redes.adiciona_aluno(priscila)
+
+redes.adiciona_aluno(pedro)
+
+pia.imprime
